@@ -1,0 +1,103 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    "logo": {
+        "source": "$HOME/.config/fastfetch/ascii.txt",
+        "padding": { "top": 0, "left": 0, "right": 0 },
+        "type": "auto",
+        "height": 1,
+        "width": 1
+    },
+
+    "display": {
+        "separator": " ",
+        "color": {
+            "title": "38;2;80;255;255"
+        }
+    },
+
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "format": "   \u001b[38;2;80;200;255m{$USER} \u001b[38;2;100;100;100m@ \u001b[38;2;120;255;180m{host-name}"
+        },
+        "break",
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;80;200;255m╭─  Hardware"
+        },
+        {
+            "type": "host",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m Host",
+            "keyColor": "default"
+        },
+        {
+            "type": "cpu",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m CPU ",
+            "keyColor": "default"
+        },
+        {
+            "type": "gpu",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m GPU ",
+            "keyColor": "default"
+        },
+        {
+            "type": "disk",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m Disk",
+            "keyColor": "default"
+        },
+        {
+            "type": "memory",
+            "key": "\u001b[38;2;80;200;255m╰─ \u001b[38;2;120;255;180m Mem ",
+            "keyColor": "default"
+        },
+
+
+        "break",
+
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;80;200;255m╭─  Software"
+        },
+        {
+            "type": "os",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m OS  ",
+            "keyColor": "default"
+        },
+        {
+            "type": "kernel",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m󰌽 Kern",
+            "keyColor": "default"
+        },
+        {
+            "type": "packages",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m󰏖 Pkgs",
+            "format": "{all}",
+            "keyColor": "default"
+        },
+        {
+            "type": "shell",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m󰚩 Shell",
+            "keyColor": "default"
+        },
+        {
+            "type": "de",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m DE  ",
+            "keyColor": "default"
+        },
+        {
+            "type": "wm",
+            "key": "\u001b[38;2;80;200;255m├─ \u001b[38;2;120;255;180m WM  ",
+            "keyColor": "default"
+        },
+        {
+            "type": "terminal",
+            "key": "\u001b[38;2;80;200;255m╰─ \u001b[38;2;120;255;180m Term",
+            "keyColor": "default"
+        },
+
+        "break",
+    ]
+}
