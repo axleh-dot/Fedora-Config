@@ -1,5 +1,3 @@
-"# Fedora-Config"
-
 Mi configuración de Fedora Workstation 44
 
 ---> NVIM CONFIG
